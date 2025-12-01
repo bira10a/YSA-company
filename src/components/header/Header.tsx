@@ -1,9 +1,12 @@
+import Logo from './img/logo.svg';
+import './_header.scss';
+
 const Header = () => {
      return (
          <header className="header">
             <div className="header__container">
                 <a href="#">
-                    <img width="200" height="150" alt="логотип" />
+                    <img src={Logo} width="200" height="150" alt="логотип" />
                 </a>
 
                 <nav className="header__nav">

@@ -1,0 +1,16 @@
+@mixin font-face($font-family, $url, $weight) {
+  @font-face {
+    font-family: "#{$font-family}";
+    src: url('../fonts/#{$url}.woff2') format("woff2"),
+    url('../fonts/#{$url}.woff') format("woff");
+    font-weight: #{$weight};
+    font-display: swap;
+    font-style: normal;
+  }
+};
+
+@include font-face(Oswald-Regular, Oswald-Regular, 400);
+@include font-face(Oswald-Bold, Oswald-Bold, 700);
+@include font-face(Philosopher, Philosopher-Bold, 700);
+@include font-face(Philosopher, Philosopher-Regular, 400);
+@include font-face(Comfortaa, Comfortaa-Medium, 500);
