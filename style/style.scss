@@ -1,11 +1,19 @@
 @use 'sass:math';
-@import 'vars';
-@import './themes/dark';
-@import './themes/normal';
-@import 'reset';
-@import 'mixins';
-@import 'global';
+// @import 'vars';
+@use 'vars';
+// @import 'fonts';
+// @import './themes/dark';
+// @import './themes/normal';
+// @import 'reset';
+// @import 'mixins';
+// @import 'global';
 
 // @import '../widgets/Header/ui/header';
 // Home Pages
 // @import 'promo';
+
+
+body {
+    color: vars.$default;
+    @include  vars.adaptiveValue("font-size", 60, 10);
+}
