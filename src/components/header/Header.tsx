@@ -5,7 +5,6 @@ const Header = () => {
      return (
          <header className="header">
             <div className="header__container">
-                <h2>Heloooo WWWwwwwworrlld</h2>
                 <a href="#">
                     <img src={Logo} width="150" height="100" alt="логотип" />
                 </a>
@@ -13,15 +12,15 @@ const Header = () => {
                 <nav className="header__nav">
                     <ul>
                         <li>
-                            <a href="\">О нас</a>
+                            <a href="\">О компании</a>
                         </li>
 
                         <li>
-                            <a href="\">О Вас</a>
+                            <a href="\">Вакансии</a>
                         </li>
 
                         <li>
-                            <a href="\">За северный кавказ</a>
+                            <a href="\">Контакты</a>
                         </li>
                     </ul>
                 </nav>
