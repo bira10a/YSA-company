@@ -1,6 +1,8 @@
 import Logo from './img/logo.svg';
 import './_header.scss';
 
+import { NavLink } from 'react-router';
+
 const Header = () => {
      return (
          <header className="header">
@@ -12,15 +14,19 @@ const Header = () => {
                 <nav className="header__nav">
                     <ul>
                         <li>
-                            <a href="\">О компании</a>
+                            <NavLink to="/">О компании</NavLink>
                         </li>
 
                         <li>
-                            <a href="\">Вакансии</a>
+                            <NavLink to="/homePage">HomePage</NavLink>
                         </li>
 
                         <li>
-                            <a href="\">Контакты</a>
+                            <NavLink to="/heroSection">HeroSection</NavLink>
+                        </li>
+
+                        <li>
+                            <NavLink to="/heroSection213123213">NotFoundPage</NavLink>
                         </li>
                     </ul>
                 </nav>
