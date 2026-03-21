@@ -9,4 +9,4 @@ const NotFoundPage = () => {
          </section>
      )
 }
-export { NotFoundPage };
+export default NotFoundPage;

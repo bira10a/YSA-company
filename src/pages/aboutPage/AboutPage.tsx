@@ -9,4 +9,4 @@ const AboutPage = () => {
          </section>
      )
 }
-export { AboutPage };
+export default AboutPage;
