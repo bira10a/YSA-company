@@ -11,14 +11,16 @@ import { NotFoundPageAsync } from "../pages/notFoundPage/NotFoundPage.async";
 
 const RoutesApp = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Suspense fallback={<div>Loading...</div>}><Layout /></Suspense>}>
-        <Route index element={<Suspense fallback={<div>Loading...</div>}><AboutPageAsync /></Suspense>} />
-        <Route path="homePage" element={<Suspense fallback={<div>Loading...</div>}><HomePageAsync/></Suspense>} />
-        <Route path="heroSection" element={<Suspense fallback={<div>Loading...</div>}><HeroSectionAsync /></Suspense>} />
-        <Route path="*" element={<Suspense fallback={<div>Loading...</div>}><NotFoundPageAsync /></Suspense>} />
-      </Route>
-    </Routes>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<AboutPageAsync />} />
+            <Route path="homePage" element={<HomePageAsync/>} />
+            <Route path="heroSection" element={<HeroSectionAsync />} />
+            <Route path="*" element={<NotFoundPageAsync />} />
+          </Route>
+      </Routes>
+    </Suspense>
   )
 } 
 export {RoutesApp};
