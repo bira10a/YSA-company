@@ -3,11 +3,11 @@
 // @import 'vars';
 @use 'vars';
 @use 'fonts';
-// @import './themes/dark';
-// @import './themes/normal';
 @use 'reset';
-// @import 'mixins';
 @use 'global';
+@use './themes/dark';
+@use './themes/normal';
+// @import 'mixins';
 
 // @import '../widgets/Header/ui/header';
 // Home Pages
