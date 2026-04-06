@@ -8,7 +8,6 @@ import { AboutPageAsync } from "../pages/aboutPage/AboutPage.async";
 import { HomePageAsync } from "../pages/homePage/HomePage.async";
 import { NotFoundPageAsync } from "../pages/notFoundPage/NotFoundPage.async";
 
-
 const RoutesApp = () => {
   return (
     <Suspense fallback={<div>Loading...</div>}>
