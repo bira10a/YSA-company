@@ -1,17 +1,11 @@
 import { useContext, useState } from "react";
 import { Header } from "../widgets/header/Header";
 import { Outlet } from "react-router";
-import { ThemeContext } from "./theme/ThemeContext";
 
-import { Theme } from "./theme/ThemeContext";
+import { useTheme } from "./theme/useTheme";
 
 const Layout = () => {
-  const {theme, setTheme} = useContext(ThemeContext);
-
-
-  const toggleTheme = () => {
-    setTheme(theme === Theme.DARK ? Theme.LIGHT : Theme.DARK);
-  }
+  const {theme, toggleTheme} = useTheme();
   
   return (
     <div className={`app ${theme}`}>  
