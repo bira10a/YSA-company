@@ -1,0 +1,1 @@
+export {HeroSectionAsync as HeroSection} from "./ui/HeroSection.async";

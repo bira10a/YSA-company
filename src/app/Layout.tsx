@@ -1,8 +1,7 @@
-import { useContext, useState } from "react";
 import { Header } from "../widgets/header/Header";
 import { Outlet } from "react-router";
 
-import { useTheme } from "./theme/useTheme";
+import { useTheme } from "./providers/ThemeProvider";
 
 const Layout = () => {
   const {theme, toggleTheme} = useTheme();
