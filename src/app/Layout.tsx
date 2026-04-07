@@ -1,4 +1,4 @@
-import { Header } from "../widgets/header/Header";
+import { Header } from "../widgets/header";
 import { Outlet } from "react-router";
 
 import { useTheme } from "./providers/ThemeProvider";

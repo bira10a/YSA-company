@@ -1,0 +1,26 @@
+@use '../../../app/style/vars';
+
+.header {
+  background-color: purple;
+  position: fixed;
+  // top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+
+      color: vars.$default;
+    }
+  }
+}
