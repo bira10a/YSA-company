@@ -3,6 +3,9 @@ import { Outlet } from "react-router";
 
 import { useTheme } from "./providers/ThemeProvider";
 
+import { Suspense } from "react";
+import { PageLoader } from "../shared/ui/PageLoader/PageLoader";
+
 const Layout = () => {
   const {theme, toggleTheme} = useTheme();
   
@@ -11,7 +14,9 @@ const Layout = () => {
       <Header />
       <button onClick={toggleTheme}>X Theme</button>
       <main>
-        <Outlet />
+        <Suspense fallback={<PageLoader />}>
+          <Outlet />
+        </Suspense>
       </main>
       <footer>2026</footer>
     </div>
