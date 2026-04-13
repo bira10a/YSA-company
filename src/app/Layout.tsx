@@ -13,12 +13,10 @@ const Layout = () => {
     <div className={`app ${theme}`}>  
       <Header />
       <button onClick={toggleTheme}>X Theme</button>
-      <main>
         <Suspense fallback={<PageLoader />}>
           <Outlet />
         </Suspense>
-      </main>
-      <footer>2026</footer>
+      <footer></footer>
     </div>
   ) 
 } 
