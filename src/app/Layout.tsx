@@ -12,7 +12,7 @@ const Layout = () => {
   return (
     <div className={`app ${theme}`}>  
       <Header />
-      <button onClick={toggleTheme}>X Theme</button>
+      {/* <button onClick={toggleTheme}>X Theme</button> */}
         <Suspense fallback={<PageLoader />}>
           <Outlet />
         </Suspense>

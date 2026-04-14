@@ -1,9 +1,11 @@
-$default: #144eee;
-$accent: #75beff;
-$mainBgColor: #1f242d;
-$secondBgColor: #323945;
+// $default: #ffffff;
+// $accent: #75beff;
+// $mainBgColor: #1f242d;
+// $secondBgColor: #323945;
 
-// :root {
-//   --bg-color: rgb(255, 33, 33);
-//   --primary-color: rgb(0, 140, 255);
-// }
+:root {
+  --default-color: #ffffff;
+  --accent-color: #75beff;
+  --default-background: #1f242d;
+  --accent-background: #323945;
+}

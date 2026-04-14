@@ -3,10 +3,10 @@
 @use 'vars';
 @use 'fonts';
 @use 'reset';
+@use 'mixins';
 @use 'global';
 @use './themes/dark';
 @use './themes/normal';
-@use 'mixins';
 
 // HomePage
 @use './HomePage/_HeroSection.scss';
