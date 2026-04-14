@@ -135,8 +135,8 @@ body {
 }
 
 .section {
-    @include mixins.adaptiveValue("padding-top", 60, 20);
-    @include mixins.adaptiveValue("padding-bottom", 60, 20);
+    // @include mixins.adaptiveValue("padding-top", 60, 20);
+    // @include mixins.adaptiveValue("padding-bottom", 60, 20);
 }
 
 

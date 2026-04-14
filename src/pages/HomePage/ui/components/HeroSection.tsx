@@ -4,7 +4,10 @@ const HeroSection = () => {
     return (
         <section className="HeroSection section">
             <div className="HeroSection__background">
-                <video autoPlay muted playsInline loop src={videoBackground} />
+                <video autoPlay muted playsInline loop >
+                    <source src={videoBackground} type="video/webm" />
+                    Ваш браузер не поддерживает встроенные видео
+                </video>
             </div>
             
             <div className="HeroSection__container">
@@ -16,4 +19,5 @@ const HeroSection = () => {
         </section>
     ) 
 } 
+// https://ru.react.dev/learn/synchronizing-with-effects
 export {HeroSection};
