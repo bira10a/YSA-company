@@ -1,5 +1,11 @@
+@use '../vars';
+vars.$default: #333;
+
 .app.dark {
-  --bg-color: pink;
-  --primary-color: red;
-  --secondary-color: rgb(100, 8, 23);
+    color: vars.$default;
+
+
+//   --bg-color: pink;
+//   --primary-color: red;
+//   --secondary-color: rgb(100, 8, 23);
 }

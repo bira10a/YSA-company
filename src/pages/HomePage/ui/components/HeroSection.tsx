@@ -1,9 +1,8 @@
-import '../style/HeroSection.scss';
 import videoBackground from "../img/videoBackground.webm";
 
 const HeroSection = () => {
     return (
-        <section className="HeroSection">
+        <section className="HeroSection section">
             <div className="HeroSection__background">
                 <video autoPlay muted playsInline loop src={videoBackground} />
             </div>

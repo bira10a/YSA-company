@@ -1,10 +1,12 @@
+@use '../vars';
+@use '../mixins';
+ 
 .HeroSection {
     position: relative;
     height: 100dvh;
-    z-index: 1;
 
     &::before {
-        @include pseudo;
+        @include mixins.pseudo;
         top: 0;
         left: 0;
         height: 100%;
@@ -28,24 +30,24 @@
     }
 
     &__container {
+        position: relative;
         height: 100dvh;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        align-items: center;
+        z-index: 1;
     }
 
     &__title {
+    // @include adaptiveValue("font-size", 32, 18);
       text-wrap: balance;
-      @include adaptiveValue("font-size", 32, 18);
       max-width: 1000px;
       width: 100%;
 
       div {
-        display: block;
         font-family: 'Oswald-bold', sans-serif;
         text-transform: uppercase;
-        @include adaptiveValue("font-size", 45, 20);
-        @include adaptiveValue("margin-bottom", 25, 10);
+        // @include adaptiveValue("font-size", 45, 20);
+        // @include adaptiveValue("margin-bottom", 25, 10);
         animation: titleColor 4s ease-in-out infinite;
       }
     }
@@ -53,14 +55,14 @@
 
 @keyframes titleColor {
     from {
-        color: $default;
+        color: vars.$default;
     }
 
     50% {
-        color: $accent;
+        color: vars.$accent;
     }
 
     to {
-        color: $default;
+        color: vars.$default;
     }
 }

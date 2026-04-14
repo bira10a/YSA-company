@@ -1,14 +1,12 @@
 @use 'sass:math';
 
-// @import 'vars';
 @use 'vars';
 @use 'fonts';
 @use 'reset';
 @use 'global';
 @use './themes/dark';
 @use './themes/normal';
-// @import 'mixins';
+@use 'mixins';
 
-// @import '../widgets/Header/ui/header';
-// Home Pages
-// @import 'promo';
+// HomePage
+@use './HomePage/_HeroSection.scss';
