@@ -12,6 +12,7 @@
         height: 100%;
         width: 100%;
         background-color: rgba(27, 24, 39, 0.717);
+        z-index: 2;
     }
 
     &__background {
@@ -19,7 +20,7 @@
         inset: 0;
         width: 100%;
         height: 100%;
-        z-index: -1;
+        z-index: 1;
         overflow: hidden;
 
         video {
@@ -34,35 +35,51 @@
         height: 100dvh;
         display: flex;
         align-items: center;
-        z-index: 1;
+        z-index: 2;
     }
 
     &__title {
-    // @include adaptiveValue("font-size", 32, 18);
-      text-wrap: balance;
-      max-width: 1000px;
-      width: 100%;
+        @include mixins.adaptiveValue("font-size", 32, 18);
+        text-wrap: balance;
+        max-width: 1000px;
+        width: 100%;
+        animation: textColor 4s ease-in-out infinite;
 
-      div {
-        font-family: 'Oswald-bold', sans-serif;
-        text-transform: uppercase;
-        // @include adaptiveValue("font-size", 45, 20);
-        // @include adaptiveValue("margin-bottom", 25, 10);
-        animation: titleColor 4s ease-in-out infinite;
-      }
+        div {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            @include mixins.adaptiveValue("font-size", 45, 20);
+            @include mixins.adaptiveValue("margin-bottom", 25, 10);
+            animation: titleColor 4s ease-in-out infinite;
+        }
     }
 }
 
 @keyframes titleColor {
     from {
-        color: vars.$default;
+        color: var(--default-color);
     }
 
     50% {
-        color: vars.$accent;
+        color: var(--accent-color);
     }
 
     to {
-        color: vars.$default;
+        color: var(--default-color);
+    }
+}
+
+@keyframes textColor {
+    from {
+        color: var(--accent-color);
+    }
+
+    50% {
+        color: var(--default-color);
+    }
+
+    to {
+        color: var(--accent-color);
     }
 }
