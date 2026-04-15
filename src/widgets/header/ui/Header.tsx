@@ -18,11 +18,11 @@ const Header = () => {
                         </li>
 
                         <li>
-                            <NavLink to="/homePage">HomePage</NavLink>
+                            <NavLink to="/HomePage">HomePage</NavLink>
                         </li>
 
                         <li>
-                            <NavLink to="/heroSection">HeroSection</NavLink>
+                            <NavLink to="/VacancyPage">VacancyPage</NavLink>
                         </li>
 
                         <li>
