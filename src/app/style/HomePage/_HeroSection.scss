@@ -35,10 +35,10 @@
         height: 100%;
         display: flex;
         align-items: center;
+        z-index: 2;
     }
     
     &__title {
-        z-index: 2;
         @include mixins.adaptiveValue("font-size", 32, 18);
         text-wrap: balance;
         max-width: 1000px;

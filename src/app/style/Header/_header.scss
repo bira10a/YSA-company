@@ -1,4 +1,5 @@
-@use '../../../app/style/vars';
+@use '../vars';
+@use '../mixins';
 
 .header {
   position: fixed;
@@ -19,7 +20,13 @@
       align-items: center;
       gap: 25px;
 
-      color: red;
+      a.active {
+        color: var(--accent-color);
+      }
     }
   }
+}
+
+.burger {
+    @include mixins.burger;
 }

@@ -1,4 +1,5 @@
 @use 'sass:math';
+@use './vars';
 
 // ИСПОЛЬЗОВАНИЕ @include pseudo
 // ИСПОЛЬЗОВАНИЕ @extend %bg-img;
@@ -85,7 +86,7 @@
 $burgerWidth: 30px;
 $burgerHeight: 20px;
 $burgerLineHeight: 2px;
-// $burgerColor: $default;
+$burgerColor: var(--default-color);
 @mixin burger {
   width: $burgerWidth; //указываем ширину линий
   height: $burgerHeight; //указываем высоту линий
