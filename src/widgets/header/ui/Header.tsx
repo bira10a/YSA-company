@@ -8,7 +8,6 @@ const Header = () => {
 
     const BurgerActive = () => {
         setBurger(burger => !burger);
-        
     }
 
      return (
